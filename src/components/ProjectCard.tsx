@@ -6,43 +6,43 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="card-hover rounded-xl border border-border bg-background-secondary p-6">
-      <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
+    <article className="card-hover border-accent-decoration group rounded-2xl border border-border bg-background p-8">
+      <h3 className="font-serif text-2xl font-semibold text-foreground group-hover:text-accent">{project.title}</h3>
 
-      <div className="mt-4 space-y-4">
+      <div className="mt-6 space-y-5">
         <div>
-          <span className="text-xs font-medium uppercase tracking-wider text-accent">
+          <span className="text-xs font-semibold uppercase tracking-[0.15em] text-accent">
             Problem
           </span>
-          <p className="mt-1 text-sm leading-relaxed text-foreground-muted">
+          <p className="mt-2 leading-relaxed text-foreground-muted">
             {project.problem}
           </p>
         </div>
 
         <div>
-          <span className="text-xs font-medium uppercase tracking-wider text-accent">
+          <span className="text-xs font-semibold uppercase tracking-[0.15em] text-accent">
             Solution
           </span>
-          <p className="mt-1 text-sm leading-relaxed text-foreground-muted">
+          <p className="mt-2 leading-relaxed text-foreground-muted">
             {project.solution}
           </p>
         </div>
 
         <div>
-          <span className="text-xs font-medium uppercase tracking-wider text-accent">
+          <span className="text-xs font-semibold uppercase tracking-[0.15em] text-accent-secondary">
             Impact
           </span>
-          <p className="mt-1 text-sm leading-relaxed text-foreground-muted">
+          <p className="mt-2 leading-relaxed text-foreground-muted">
             {project.impact}
           </p>
         </div>
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-2">
+      <div className="mt-8 flex flex-wrap gap-2">
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-accent-subtle px-3 py-1 text-xs font-medium text-accent"
+            className="rounded-full border border-border px-3 py-1.5 text-xs font-medium text-foreground-muted transition-colors hover:border-accent hover:text-accent"
           >
             {tag}
           </span>

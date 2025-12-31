@@ -10,17 +10,17 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-subtle bg-background/80 backdrop-blur-md">
-      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+    <header className="sticky top-0 z-50 border-b border-border-subtle bg-background/90 backdrop-blur-md">
+      <nav className="mx-auto flex h-20 max-w-5xl items-center justify-between px-6">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight transition-colors hover:text-accent"
+          className="font-serif text-xl font-semibold tracking-tight transition-colors hover:text-accent"
         >
           {siteConfig.name}
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-2 md:flex">
           {siteConfig.nav.map((item) => {
             const isActive =
               pathname === item.href ||
@@ -29,13 +29,16 @@ export function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`relative rounded-lg px-4 py-2 text-sm font-medium transition-all ${
                     isActive
-                      ? "bg-accent-subtle text-accent"
-                      : "text-foreground-muted hover:bg-background-secondary hover:text-foreground"
+                      ? "text-accent"
+                      : "text-foreground-muted hover:text-foreground"
                   }`}
                 >
                   {item.label}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-1/2 h-0.5 w-8 -translate-x-1/2 rounded-full bg-accent"></span>
+                  )}
                 </Link>
               </li>
             );

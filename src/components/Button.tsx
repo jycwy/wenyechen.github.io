@@ -15,12 +15,12 @@ export function Button({
   external = false,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-medium transition-all";
+    "group relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-3.5 text-sm font-semibold transition-all duration-300";
 
   const variants = {
-    primary: "bg-accent text-white hover:bg-accent-hover",
+    primary: "bg-accent text-background hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-0.5",
     secondary:
-      "border border-border bg-transparent text-foreground hover:bg-background-secondary hover:border-foreground-muted",
+      "border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-background",
   };
 
   const className = `${baseStyles} ${variants[variant]}`;
@@ -33,14 +33,14 @@ export function Button({
         target="_blank"
         rel="noopener noreferrer"
       >
-        {children}
+        <span className="relative z-10">{children}</span>
       </a>
     );
   }
 
   return (
     <Link href={href} className={className}>
-      {children}
+      <span className="relative z-10">{children}</span>
     </Link>
   );
 }

@@ -11,29 +11,36 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="gradient-bg">
-      <div className="mx-auto max-w-5xl px-6 py-20">
+      <div className="mx-auto max-w-5xl px-6 py-24">
         <div className="mx-auto max-w-3xl">
           {/* Main Content */}
           <div>
-            <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <div className="mb-4 flex items-center gap-3">
+              <div className="h-px w-8 bg-accent"></div>
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+                Background
+              </p>
+            </div>
+            <h1 className="font-serif text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
               About Me
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-foreground-muted">
+            <div className="mt-6 h-px w-20 bg-gradient-to-r from-accent to-accent-secondary"></div>
+            <p className="mt-8 text-xl leading-relaxed text-foreground-muted">
               {siteConfig.about.intro}
             </p>
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-10 space-y-6">
               {siteConfig.about.paragraphs.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="leading-relaxed text-foreground-muted"
+                  className="text-lg leading-relaxed text-foreground-muted"
                 >
                   {paragraph}
                 </p>
               ))}
             </div>
 
-            <div className="mt-10">
+            <div className="mt-12">
               <Button href="/contact">Get in Touch</Button>
             </div>
           </div>

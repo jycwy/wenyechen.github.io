@@ -4,16 +4,16 @@ import { siteConfig } from "@/content/site";
 export function Footer() {
   return (
     <footer className="border-t border-border-subtle bg-background-secondary">
-      <div className="mx-auto max-w-5xl px-6 py-12">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex flex-col items-center gap-2 md:items-start">
+      <div className="mx-auto max-w-5xl px-6 py-16">
+        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+          <div className="flex flex-col items-center gap-3 md:items-start">
             <Link
               href="/"
-              className="text-lg font-semibold tracking-tight transition-colors hover:text-accent"
+              className="font-serif text-xl font-semibold tracking-tight transition-colors hover:text-accent"
             >
               {siteConfig.name}
             </Link>
-            <p className="text-sm text-foreground-muted">{siteConfig.title}</p>
+            <p className="font-serif italic text-foreground-muted">{siteConfig.title}</p>
           </div>
 
           <div className="flex items-center gap-6">
@@ -21,7 +21,7 @@ export function Footer() {
               href={siteConfig.contact.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground-muted transition-colors hover:text-accent"
+              className="text-foreground-muted transition-all hover:text-accent hover:scale-110"
               aria-label="GitHub"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@ export function Footer() {
               href={siteConfig.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground-muted transition-colors hover:text-accent"
+              className="text-foreground-muted transition-all hover:text-accent hover:scale-110"
               aria-label="LinkedIn"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ export function Footer() {
             </a>
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className="text-foreground-muted transition-colors hover:text-accent"
+              className="text-foreground-muted transition-all hover:text-accent hover:scale-110"
               aria-label="Email"
             >
               <svg
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-border-subtle pt-8 text-center">
+        <div className="mt-10 border-t border-border-subtle pt-10 text-center">
           <p className="text-sm text-foreground-muted">
             {siteConfig.footer.copyright}
           </p>

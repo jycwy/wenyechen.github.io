@@ -4,10 +4,10 @@
 
 export const siteConfig = {
   name: "Wenye Chen",
-  title: "AI Engineer",
-  tagline: "Search Infrastructure • LLM Automation • Model Evaluation",
+  title: "AI-Native Engineer",
+  tagline: "Building with AI • Thinking through AI • Growing with AI",
   description:
-    "Backend engineer with 4 years of experience building distributed search infrastructure at Microsoft, now working on LLM automation and ML workflows in fin-tech. I focus on applying solid engineering practices to real-world AI systems.",
+    "I'm an AI-native engineer who integrates AI into every aspect of my work — from problem-solving to implementation. With 4 years at Microsoft building search infrastructure and recent experience in LLM automation, I approach engineering challenges through an AI-first lens, leveraging GenAI tools to amplify productivity and build intelligent systems.",
 
   // Navigation
   nav: [
@@ -21,7 +21,7 @@ export const siteConfig = {
   hero: {
     greeting: "Hi, I'm",
     description:
-      "Backend engineer with 4 years of experience building distributed search infrastructure at Microsoft, now working on LLM automation and ML workflows in fin-tech. I focus on applying solid engineering practices to real-world AI systems.",
+      "I'm an AI-native engineer who integrates AI into every aspect of my work — from problem-solving to implementation. With 4 years at Microsoft building search infrastructure and recent experience in LLM automation, I approach engineering challenges through an AI-first lens, leveraging GenAI tools to amplify productivity and build intelligent systems.",
     cta: {
       primary: { label: "View Projects", href: "/projects" },
       secondary: { label: "Get in Touch", href: "/contact" },
@@ -31,19 +31,19 @@ export const siteConfig = {
   // Skills/expertise highlights
   expertise: [
     {
-      title: "Search Infrastructure",
+      title: "AI-First Engineering",
       description:
-        "4 years at Microsoft on distributed search systems — ranking platform development, query optimization, and monitoring. Our search platform serves as a core retrieval component in Copilot's RAG system.",
+        "I integrate AI tools into every stage of development — using Claude and GPT-4 for code generation, debugging, and architecture design. I don't just build AI systems; I use AI to build better, faster, and more thoughtfully.",
     },
     {
-      title: "Agentic Workflows",
+      title: "Agentic Systems & LLM Automation",
       description:
-        "Designing and building LLM-powered automation across multiple domains, including video information extraction for academic content and model selection and evaluation workflows in a regulated production environment.",
+        "Designing and building LLM-powered automation across multiple domains, including video information extraction, model selection workflows, and conversational interfaces for complex ML infrastructure like MLflow.",
     },
     {
-      title: "Engineering Lifecycle",
+      title: "Search & Retrieval Infrastructure",
       description:
-        "End-to-end ownership across the engineering lifecycle, from early problem definition and stakeholder alignment through design, implementation, validation, and deployment.",
+        "4 years at Microsoft building distributed search systems that now power Copilot's RAG architecture. Deep expertise in ranking algorithms, query optimization, and production-scale retrieval systems.",
     },
   ],
 
@@ -120,11 +120,11 @@ export const siteConfig = {
   // About page content
   about: {
     intro:
-      "Backend engineer with 4 years of experience at Microsoft (China), now applying what I learned to GenAI systems in the fin-tech industry.",
+      "I'm an AI-native engineer — someone who doesn't just build AI systems, but fundamentally integrates AI into how I think, learn, and create.",
     paragraphs: [
-      "I spent 4 years at Microsoft (China) working on distributed search infrastructure — ranking platform development, query processing, and monitoring systems. It taught me a lot about building reliable software at scale.",
-      "I have an MSc in AI from the University of Edinburgh, where I focused on NLP and machine learning. These days I'm interested in GenAI systems and the practical side of getting them to work reliably in production.",
-      "I recently relocated to London. I built video information extraction workflows at an academic video platform startup, and now in fintech I'm helping set up model selection and evaluation workflows in a regulated production environment.",
+      "What does AI-native mean to me? It means using Claude and GPT-4 as thought partners throughout my day — from brainstorming architectures to debugging production issues. It means building agentic workflows that augment human capabilities. It means constantly exploring how AI can make me a better engineer, not just what AI I can build for others.",
+      "My foundation comes from 4 years at Microsoft (China), where I built distributed search infrastructure that now powers Copilot's RAG system. I learned to build reliable software at scale — ranking platforms, query optimization, and monitoring systems that handle millions of requests.",
+      "With an MSc in AI from the University of Edinburgh, I've been fascinated by how AI evolves. After relocating to London, I've focused on GenAI systems: building LLM-powered video extraction pipelines, creating conversational interfaces for ML infrastructure, and establishing model evaluation workflows in regulated fintech environments. Each project is an opportunity to explore what AI-native engineering looks like in practice.",
     ],
   },
 
@@ -134,9 +134,9 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/wenye-223665197",
     github: "https://github.com/wenyechen",
     intro:
-      "Happy to chat about AI engineering, agentic systems, or just interesting technical problems. Feel free to reach out.",
+      "Interested in discussing AI-native workflows, agentic systems, or how to integrate AI into engineering practice? Let's connect.",
     availability:
-      "Open to AI Engineer, ML Platform Engineer, and Backend/AI hybrid roles.",
+      "Open to roles where AI-native engineering is valued — AI Engineer, ML Platform, or teams building the future of AI-augmented development.",
   },
 
   // Footer

@@ -6,11 +6,11 @@ interface ExpertiseCardProps {
 
 export function ExpertiseCard({ expertise }: ExpertiseCardProps) {
   return (
-    <div className="rounded-xl border border-border bg-background-secondary p-6 transition-colors hover:border-border">
-      <h3 className="text-lg font-semibold text-foreground">
+    <div className="card-hover border-accent-decoration group rounded-2xl border border-border bg-background p-8 transition-all">
+      <h3 className="font-serif text-xl font-semibold text-foreground group-hover:text-accent">
         {expertise.title}
       </h3>
-      <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+      <p className="mt-4 leading-relaxed text-foreground-muted">
         {expertise.description}
       </p>
     </div>

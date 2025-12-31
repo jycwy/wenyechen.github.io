@@ -10,26 +10,34 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="gradient-bg">
-      <div className="mx-auto max-w-5xl px-6 py-20">
+      <div className="mx-auto max-w-5xl px-6 py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <div className="mx-auto mb-4 flex w-fit items-center gap-3">
+            <div className="h-px w-8 bg-accent"></div>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+              Contact
+            </p>
+            <div className="h-px w-8 bg-accent"></div>
+          </div>
+          <h1 className="font-serif text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
             Let&apos;s Connect
           </h1>
-          <p className="mt-4 text-lg text-foreground-muted">
+          <div className="mx-auto mt-6 h-px w-20 bg-gradient-to-r from-accent to-accent-secondary"></div>
+          <p className="mt-8 text-lg leading-relaxed text-foreground-muted">
             {siteConfig.contact.intro}
           </p>
-          <p className="mt-2 text-accent">{siteConfig.contact.availability}</p>
+          <p className="mt-4 font-medium text-accent-secondary">{siteConfig.contact.availability}</p>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-3xl gap-6 md:grid-cols-3">
           {/* Email */}
           <a
             href={`mailto:${siteConfig.contact.email}`}
-            className="card-hover flex flex-col items-center rounded-xl border border-border bg-background-secondary p-8 text-center"
+            className="card-hover group flex flex-col items-center rounded-2xl border border-border bg-background p-8 text-center"
           >
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent-subtle">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent-subtle transition-all group-hover:scale-110">
               <svg
-                className="h-6 w-6 text-accent"
+                className="h-7 w-7 text-accent"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -42,7 +50,7 @@ export default function ContactPage() {
                 />
               </svg>
             </div>
-            <h2 className="mt-4 font-semibold text-foreground">Email</h2>
+            <h2 className="mt-5 font-serif text-lg font-semibold text-foreground">Email</h2>
             <p className="mt-2 text-sm text-foreground-muted break-all">
               {siteConfig.contact.email}
             </p>
@@ -53,18 +61,18 @@ export default function ContactPage() {
             href={siteConfig.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="card-hover flex flex-col items-center rounded-xl border border-border bg-background-secondary p-8 text-center"
+            className="card-hover group flex flex-col items-center rounded-2xl border border-border bg-background p-8 text-center"
           >
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent-subtle">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent-subtle transition-all group-hover:scale-110">
               <svg
-                className="h-6 w-6 text-accent"
+                className="h-7 w-7 text-accent"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </div>
-            <h2 className="mt-4 font-semibold text-foreground">LinkedIn</h2>
+            <h2 className="mt-5 font-serif text-lg font-semibold text-foreground">LinkedIn</h2>
             <p className="mt-2 text-sm text-foreground-muted">Connect with me</p>
           </a>
 
@@ -73,11 +81,11 @@ export default function ContactPage() {
             href={siteConfig.contact.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="card-hover flex flex-col items-center rounded-xl border border-border bg-background-secondary p-8 text-center"
+            className="card-hover group flex flex-col items-center rounded-2xl border border-border bg-background p-8 text-center"
           >
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent-subtle">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent-subtle transition-all group-hover:scale-110">
               <svg
-                className="h-6 w-6 text-accent"
+                className="h-7 w-7 text-accent"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -88,7 +96,7 @@ export default function ContactPage() {
                 />
               </svg>
             </div>
-            <h2 className="mt-4 font-semibold text-foreground">GitHub</h2>
+            <h2 className="mt-5 font-serif text-lg font-semibold text-foreground">GitHub</h2>
             <p className="mt-2 text-sm text-foreground-muted">View my code</p>
           </a>
         </div>
